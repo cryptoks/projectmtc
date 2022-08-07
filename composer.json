@@ -1,0 +1,23 @@
+{
+    "name": "as/test-project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Albian Sadiku",
+            "email": "albiansadikuks@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "robmorgan/phinx": "^0.12.12",
+        "guzzlehttp/guzzle": "^7.4",
+        "spatie/guzzle-rate-limiter-middleware": "^2.0",
+        "envms/fluentpdo": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libraries\\": "Libraries/",
+            "Models\\": "Models/"
+        }
+    }
+}
