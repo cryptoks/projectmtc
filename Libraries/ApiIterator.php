@@ -22,22 +22,22 @@ class ApiIterator
         $this->guzzleClient = $guzzleClient;
     }
 
-    public function setApiURL(string $apiUrl) :ApiIterator
+    public function setApiURL(string $apiUrl)
     {
         $this->apiUrl = $apiUrl;
     }
 
-    public function setApiKey(string $apiKey) :ApiIterator
+    public function setApiKey(string $apiKey)
     {
         $this->apiKey = $apiKey;
     }
 
-    public function returnPropertyTypes($returnPropertyTypes) :ApiIterator
+    public function returnPropertyTypes($returnPropertyTypes)
     {
         $this->returnPropertyTypes = $returnPropertyTypes;
     }
 
-    public function getData() :object
+    public function getData() :array
     {
 
         $apiRequest = $this->guzzleClient->request('GET', $_ENV['API_URL'] . '/api/properties', [
