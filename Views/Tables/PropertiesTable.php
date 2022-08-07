@@ -64,18 +64,6 @@ if (isset($_POST)) {
         }
     }
 
-//    if (!empty($_POST['search']['value'])) {
-//        $searchQuery .= " WHERE ";
-//        $searchQuery .= " ( withdrawal_address LIKE '%" . $_POST['search']['value'] . "%' ";
-//        $searchQuery .= " OR created_at LIKE '%" . $_POST['search']['value'] . "%' )";
-//        $searchQuery .= " OR id LIKE '%" . $_POST['search']['value'] . "%' )";
-//    }
-//    if (isset($_POST['searchByWithdrawalStatus'])) {
-//        if ($_POST['searchByWithdrawalStatus'] !== '') {
-//            $searchQuery .= " WHERE status = '" . $_POST['searchByWithdrawalStatus'] . "'";
-//        }
-//    }
-
     $data = array(
         'column_name' => $columnName,
         'column_sort_order' => $columnSortOrder,
