@@ -21,8 +21,6 @@ class PropertiesSeeder extends AbstractSeed
         );
         $apiIterator->setApiURL($_ENV['API_URL']);
         $apiIterator->setApiKey($_ENV['API_KEY']);
-        $apiIterator->returnPropertyTypes(true);
-
 
         do{
             $apiData = $apiIterator->getData();

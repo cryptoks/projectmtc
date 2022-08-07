@@ -15,8 +15,6 @@ class ApiIterator
     public $hasNextPage = true;
     protected $nextPage = 1;
 
-    protected $returnPropertyTypes = false;
-
     public function __construct(Client $guzzleClient)
     {
         $this->guzzleClient = $guzzleClient;
@@ -30,11 +28,6 @@ class ApiIterator
     public function setApiKey(string $apiKey)
     {
         $this->apiKey = $apiKey;
-    }
-
-    public function returnPropertyTypes($returnPropertyTypes)
-    {
-        $this->returnPropertyTypes = $returnPropertyTypes;
     }
 
     public function getData() :array
